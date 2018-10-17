@@ -45,7 +45,5 @@ public class fc implements functie {
                 return "eroare";
 
         }
-
     }
-
 }

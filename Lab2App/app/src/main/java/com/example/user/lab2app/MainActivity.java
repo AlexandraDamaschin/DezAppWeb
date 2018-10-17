@@ -9,8 +9,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        functie f=new fc();
-        functie g=new gc();
-        AutomatMealy myAutomat = new AutomatMealy(f,g);
+        functie f = new fc();
+        functie g = new gc();
+        AutomatMealy myAutomat = new AutomatMealy(f, g);
+        System.out.println(myAutomat.evolutie("1", "a"));
     }
 }

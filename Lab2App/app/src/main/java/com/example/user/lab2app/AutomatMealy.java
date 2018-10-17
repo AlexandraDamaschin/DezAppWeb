@@ -7,6 +7,7 @@ public class AutomatMealy extends AutomatMealyAbstract{
 
     @Override
     public String f(String stare, String intrare) {
+        return null;
     }
 
     @Override
@@ -16,6 +17,6 @@ public class AutomatMealy extends AutomatMealyAbstract{
 
     @Override
     public String evolutie(String stareInitiala, String stringIntrare) {
-        return null;
+        return f(stareInitiala,stringIntrare);
     }
 }
