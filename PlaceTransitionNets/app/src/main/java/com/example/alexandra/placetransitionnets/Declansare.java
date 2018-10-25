@@ -14,6 +14,6 @@ public class Declansare {
         System.out.println(" Executat Tranzita :\t" + tt);
         for (int i = 0; i < MM.length; i++)
             System.out.print(MM[i] + ",");
-        System.out.println("");
+        System.out.println(" ");
     }
 }
