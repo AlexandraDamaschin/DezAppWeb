@@ -31,7 +31,7 @@ public class MasinaTuring extends MasinaTuringAbstract {
             bb.setCharAt(indexBanda, triplet.symbol.charAt(0));
             indexBanda += triplet.deplasare;
 
-            output.append("-> (");
+            output.append("-> \n(");
             output.append(triplet.stare);
             output.append(", ");
             output.append(stareBanda());

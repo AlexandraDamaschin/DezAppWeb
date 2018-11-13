@@ -1,6 +1,12 @@
 package com.example.alexandra.mealy;
 
+import java.util.Random;
+
 public class AutomatMealy extends AutomatMealyAbstract {
+
+    String enters[] = {"a", "b", "c"};
+
+
     public AutomatMealy(functie fi, functie gi) {
         super(fi, gi);
     }
@@ -20,26 +26,32 @@ public class AutomatMealy extends AutomatMealyAbstract {
         String result = new String();
 
         String stare = stareInitiala;
+        while (stare != "5"){
 
-        for (int i = 0; i < stringIntrare.length(); i++) {
-            String currentChar = Character.toString(stringIntrare.charAt(i));
+            int idx = new Random().nextInt(enters.length);
+            String randomEnter = (enters[idx]);
 
+            result = new String();
             result += "(";
             result += stare;
             result += ", ";
-            result += currentChar;
+            result += randomEnter;
             result += ", ";
 
-            stare = f(stare, currentChar);
+            stare = f(stare, randomEnter);
 
             result += stare;
             result += ", ";
-            result += g(stare, currentChar);
+            result += g(stare, randomEnter);
             result += ") ";
+            System.out.println(result);
+//            String state = test.f(firstState, randomEnter);
+//            String enter = test.g(firstState,randomEnter);
+           // System.out.println(test.evolutie(stare,randomEnter));
+            // System.out.println("(" + state + "," + "," + enter + ")");
+//            firstEnter = enter;
+//            firstState = state;
 
-            if (stare == "err") {
-                break;
-            }
         }
         return result;
     }
