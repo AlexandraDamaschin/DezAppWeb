@@ -6,7 +6,6 @@ public class AutomatMealy extends AutomatMealyAbstract {
 
     String enters[] = {"a", "b", "c"};
 
-
     public AutomatMealy(functie fi, functie gi) {
         super(fi, gi);
     }
@@ -45,13 +44,6 @@ public class AutomatMealy extends AutomatMealyAbstract {
             result += g(stare, randomEnter);
             result += ") ";
             System.out.println(result);
-//            String state = test.f(firstState, randomEnter);
-//            String enter = test.g(firstState,randomEnter);
-           // System.out.println(test.evolutie(stare,randomEnter));
-            // System.out.println("(" + state + "," + "," + enter + ")");
-//            firstEnter = enter;
-//            firstState = state;
-
         }
         return result;
     }

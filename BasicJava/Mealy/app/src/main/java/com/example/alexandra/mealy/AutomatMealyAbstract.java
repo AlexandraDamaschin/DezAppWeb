@@ -1,7 +1,6 @@
 package com.example.alexandra.mealy;
 // E=a(a|b)*c
 
-
 interface functie {
     public String calcul(String stare, String intrare);
 }
@@ -51,7 +50,6 @@ class fc implements functie {
                 break;
             }
         }
-
         return returnValue;
     }
 }
