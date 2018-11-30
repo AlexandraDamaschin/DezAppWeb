@@ -1,10 +1,10 @@
 package com.example.alexandra.testactivity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tToast("Starea curenta: onCreate().");
     }
+
+    Button backButton = findViewById(R.id.back_button);
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
