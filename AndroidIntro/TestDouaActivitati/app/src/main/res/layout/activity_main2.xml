@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
+    <TextView
+        android:id="@+id/text_received"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/type_here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/type_here"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
@@ -29,6 +30,7 @@
             android:textAllCaps="true" />
 
         <Button
+            android:id="@+id/button_second_activity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/button_margin"
