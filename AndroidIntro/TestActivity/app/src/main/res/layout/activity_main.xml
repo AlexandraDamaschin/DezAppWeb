@@ -3,8 +3,9 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/back_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:id="@+id/next_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="onClickBtnNext"
+        android:text="Next" />
 </RelativeLayout>

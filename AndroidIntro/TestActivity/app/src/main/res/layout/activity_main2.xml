@@ -8,5 +8,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="SecondActivity"/>
+        android:text="SecondActivity" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:onClick="onClickBtnBack"
+        android:text="Back"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="39dp"
+        tools:ignore="MissingConstraints" />
+
 </android.support.constraint.ConstraintLayout>

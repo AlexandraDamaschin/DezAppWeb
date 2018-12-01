@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
-import android.widget.Button;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,12 +16,15 @@ public class MainActivity extends AppCompatActivity {
         tToast("Starea curenta: onCreate().");
     }
 
-    Button backButton = findViewById(R.id.back_button);
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
+    }
+
+    public void onClickBtnNext(View view) {
+        tToast("Starea curenta: onClickBtnNext().");
+        setContentView(R.layout.activity_main2);
     }
 
     public void onStart() {
