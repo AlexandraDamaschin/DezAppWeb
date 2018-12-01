@@ -1,23 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Main2Activity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SecondActivity" />
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/back_button"
         android:layout_width="150sp"
         android:layout_height="50sp"
         android:onClick="onClickBtnBack"
-        android:text="Back"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="39dp"
-        tools:ignore="MissingConstraints" />
+        android:text="@string/back" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

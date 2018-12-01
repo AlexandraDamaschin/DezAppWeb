@@ -15,8 +15,13 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void onClickBtnBack(View view) {
-        tToast("Starea curenta: onClickBtnBack().");
+        tToast("Starea curenta: onClickBtnNext().");
         setContentView(R.layout.activity_main);
+    }
+
+    public void onClickBtnNext(View view) {
+        tToast("Starea curenta: onClickBtnBack().");
+        setContentView(R.layout.activity_main2);
     }
 
     public void onStart() {

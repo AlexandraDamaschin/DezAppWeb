@@ -21,9 +21,13 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
+    public void onClickBtnBack(View view) {
+        tToast("Starea curenta: onClickBtnNext().");
+        setContentView(R.layout.activity_main);
+    }
 
     public void onClickBtnNext(View view) {
-        tToast("Starea curenta: onClickBtnNext().");
+        tToast("Starea curenta: onClickBtnBack().");
         setContentView(R.layout.activity_main2);
     }
 
