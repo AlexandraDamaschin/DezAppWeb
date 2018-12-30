@@ -2,11 +2,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/second_activity" />
+
     <Button
         android:id="@+id/back_button"
         android:layout_width="150sp"
         android:layout_height="50sp"
+        android:layout_marginTop="@dimen/margins"
         android:onClick="onClickBtnBack"
         android:text="@string/back" />
-
 </RelativeLayout>
