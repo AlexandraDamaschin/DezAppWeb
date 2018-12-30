@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margins_top"
             android:gravity="center"
+            android:onClick="next"
             android:padding="@dimen/button_padding"
             android:text="@string/button_next" />
     </LinearLayout>
