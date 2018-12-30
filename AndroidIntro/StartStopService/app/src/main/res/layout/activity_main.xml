@@ -18,7 +18,6 @@
             android:textColor="@android:color/black" />
 
         <Button
-            android:id="@+id/start_button"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
             android:layout_gravity="center_vertical|center_horizontal"
@@ -27,7 +26,6 @@
             android:text="@string/start" />
 
         <Button
-            android:id="@+id/stop_button"
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
             android:layout_gravity="center_vertical|center_horizontal"

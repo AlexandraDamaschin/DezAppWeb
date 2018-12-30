@@ -21,10 +21,6 @@
             android:name=".StartService"
             android:enabled="true"
             android:exported="true" />
-        <service
-            android:name=".StopService"
-            android:enabled="true"
-            android:exported="true"></service>
     </application>
 
 </manifest>
