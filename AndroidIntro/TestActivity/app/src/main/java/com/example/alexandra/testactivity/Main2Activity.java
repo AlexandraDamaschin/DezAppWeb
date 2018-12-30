@@ -15,16 +15,16 @@ public class Main2Activity extends Activity {
     }
 
     public void onClickBtnBack(View view) {
-        tToast("Starea curenta: onClickBtnNext().");
+        makeToast("Starea curenta: onClickBtnNext().");
         setContentView(R.layout.activity_main);
     }
 
     public void onClickBtnNext(View view) {
-        tToast("Starea curenta: onClickBtnBack().");
+        makeToast("Starea curenta: onClickBtnBack().");
         setContentView(R.layout.activity_main2);
     }
 
-    private void tToast(String str) {
+    private void makeToast(String str) {
         Context context = getApplicationContext();
         int time = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, str, time);
