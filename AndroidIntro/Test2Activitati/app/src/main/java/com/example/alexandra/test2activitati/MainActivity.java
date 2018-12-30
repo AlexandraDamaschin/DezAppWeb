@@ -10,16 +10,21 @@ public class MainActivity extends AppCompatActivity {
 
     String editText = "";
     EditText editText1;
+    String getEditText = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         editText1 = (EditText) findViewById(R.id.editText1);
+
+        getEditText = getIntent().getStringExtra("EditText2");
+
+        editText1.setText(getEditText);
     }
 
     public void next(View v) {
-
         editText = editText1.getText().toString();
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         intent.putExtra("EditText1", editText);
