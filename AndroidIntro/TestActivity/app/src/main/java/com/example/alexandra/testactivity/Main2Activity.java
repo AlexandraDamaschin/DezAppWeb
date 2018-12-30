@@ -1,12 +1,12 @@
 package com.example.alexandra.testactivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-public class Main2Activity extends AppCompatActivity {
+public class Main2Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,37 +22,6 @@ public class Main2Activity extends AppCompatActivity {
     public void onClickBtnNext(View view) {
         tToast("Starea curenta: onClickBtnBack().");
         setContentView(R.layout.activity_main2);
-    }
-
-    public void onStart() {
-        super.onStart();
-        tToast("Starea curenta: onStart().");
-    }
-
-    public void onRestart() {
-        super.onRestart();
-        tToast("Starea curenta: onRestart().");
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        tToast("Starea curenta: onResume().");
-    }
-
-    public void onPause() {
-        super.onPause();
-        tToast("Starea curenta: onPause().");
-    }
-
-    public void onStop() {
-        super.onStop();
-        tToast("Starea curenta: onStop().");
-    }
-
-    public void onDestroy() {
-        super.onDestroy();
-        tToast("Starea curenta: onDistroy().");
     }
 
     private void tToast(String str) {
