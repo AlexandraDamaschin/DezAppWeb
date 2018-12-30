@@ -15,7 +15,8 @@
             android:layout_marginTop="@dimen/margins_top"
             android:gravity="center"
             android:text="@string/first_activity"
-            android:textAllCaps="true" />
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
 
         <EditText
             android:id="@+id/editText1"
@@ -25,7 +26,6 @@
             android:autofillHints="@string/hint_editText" />
 
         <Button
-            android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margins_top"
