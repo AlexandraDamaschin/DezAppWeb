@@ -19,12 +19,6 @@ public class MainActivity extends Activity {
         showToast("Starea curenta: onCreate().");
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
-    }
-
     public void onClickBtnBack(View view) {
         showToast("Starea curenta: onClickBtnNext().");
         setContentView(R.layout.activity_main);
@@ -84,7 +78,7 @@ public class MainActivity extends Activity {
 
     private void showToast(String str) {
         Context context = getApplicationContext();
-        int time = Toast.LENGTH_SHORT;
+        int time = Toast.LENGTH_LONG;
         Toast toast = Toast.makeText(context, str, time);
         toast.show();
     }
