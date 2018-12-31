@@ -22,15 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
     // Method to start the service
     public void startService(View view) {
-        startService(new Intent(getBaseContext(), HashSetService.class));
+        Intent intent = new Intent(getBaseContext(), HashSetService.class);
         //get text from edit text
         editTextAStr = editTextA.getText().toString();
         editTextBStr = editTextB.getText().toString();
+        intent.putExtra("EditTextA", editTextAStr);
+        intent.putExtra("EditTextB", editTextBStr);
+        startService(intent);
     }
 
     // Method to stop the service
     public void stopService(View view) {
-        stopService(new Intent(getBaseContext(), HashSetService.class));
+        Intent intent = new Intent(getBaseContext(), HashSetService.class);
+        stopService(intent);
     }
 
     // Union A and B
