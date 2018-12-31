@@ -4,18 +4,28 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
+    EditText editTextA, editTextB;
+    String editTextAStr, editTextBStr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        editTextA = (EditText) findViewById(R.id.edit_text_A);
+        editTextB = (EditText) findViewById(R.id.edit_text_B);
     }
 
     // Method to start the service
     public void startService(View view) {
         startService(new Intent(getBaseContext(), HashSetService.class));
+        //get text from edit text
+        editTextAStr = editTextA.getText().toString();
+        editTextBStr = editTextB.getText().toString();
     }
 
     // Method to stop the service
