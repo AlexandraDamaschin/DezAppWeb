@@ -6,4 +6,7 @@
     <string name="intersection">Intersection</string>
     <string name="difference">Difference</string>
     <string name="symmetricDifference">Symmetric Diff</string>
+    <string name="hintA">Complete A</string>
+    <string name="hintB">Complete B</string>
+    <string name="result">Result:</string>
 </resources>
