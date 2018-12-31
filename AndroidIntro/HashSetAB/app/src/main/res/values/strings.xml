@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HashSetAB</string>
+    <string name="app_name">Hash Set A/B Service</string>
     <string name="start">Start Service</string>
     <string name="stop">Stop Service</string>
 </resources>

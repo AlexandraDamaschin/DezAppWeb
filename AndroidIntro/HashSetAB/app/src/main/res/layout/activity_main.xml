@@ -17,6 +17,32 @@
             android:textAllCaps="true"
             android:textColor="@android:color/black" />
 
+        <!--edit text A-->
+        <EditText
+            android:id="@+id/edit_text_A"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_top_margin"
+            android:gravity="center" />
+
+        <!--edit text B-->
+        <EditText
+            android:id="@+id/edit_text_B"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_top_margin"
+            android:gravity="center" />
+
+        <!--text view result-->
+        <TextView
+            android:id="@+id/text_view_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/layout_top_margin"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_result" />
+
+        <!--start service-->
         <Button
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
@@ -25,6 +51,7 @@
             android:onClick="startService"
             android:text="@string/start" />
 
+        <!--stop service-->
         <Button
             android:layout_width="@dimen/button_width"
             android:layout_height="@dimen/button_height"
@@ -32,6 +59,14 @@
             android:layout_marginTop="@dimen/layout_top_margin"
             android:onClick="stopService"
             android:text="@string/stop" />
+
+        <!--union service-->
+
+        <!--intersection service-->
+
+        <!--difference service-->
+
+        <!--SymmetricDifference service-->
     </LinearLayout>
 
 </ScrollView>

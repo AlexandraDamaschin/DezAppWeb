@@ -3,4 +3,5 @@
     <dimen name="layout_top_margin">30dp</dimen>
     <dimen name="button_width">150dp</dimen>
     <dimen name="button_height">50dp</dimen>
+    <dimen name="text_size_result">20sp</dimen>
 </resources>
