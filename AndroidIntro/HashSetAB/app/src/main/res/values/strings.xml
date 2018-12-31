@@ -2,4 +2,8 @@
     <string name="app_name">Hash Set A/B Service</string>
     <string name="start">Start Service</string>
     <string name="stop">Stop Service</string>
+    <string name="union">Union</string>
+    <string name="intersection">Intersection</string>
+    <string name="difference">Difference</string>
+    <string name="symmetricDifference">Symmetric Diff</string>
 </resources>
