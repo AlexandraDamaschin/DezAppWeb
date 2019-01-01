@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Test2Activitati</string>
+    <string name="first_activity">First Activity</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="button_next">Next to second activity</string>
+    <string name="button_back">Back to first activity</string>
+    <string name="hint_editText">Type your text here</string>
 </resources>
