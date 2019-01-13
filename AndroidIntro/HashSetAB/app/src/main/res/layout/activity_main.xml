@@ -115,6 +115,7 @@
                 android:layout_height="@dimen/button_height"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginLeft="@dimen/button_margin_left"
+                android:enabled="false"
                 android:text="@string/union" />
 
             <!--intersection service-->
@@ -124,6 +125,7 @@
                 android:layout_height="@dimen/button_height"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginLeft="@dimen/button_margin_left"
+                android:enabled="false"
                 android:text="@string/intersection" />
 
         </LinearLayout>
@@ -141,6 +143,7 @@
                 android:layout_height="@dimen/button_height"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginLeft="@dimen/button_margin_left"
+                android:enabled="false"
                 android:text="@string/difference" />
 
             <!--SymmetricDifference service-->
@@ -150,6 +153,7 @@
                 android:layout_height="@dimen/button_height"
                 android:layout_marginStart="@dimen/button_margin_left"
                 android:layout_marginLeft="@dimen/button_margin_left"
+                android:enabled="false"
                 android:text="@string/symmetricDifference" />
         </LinearLayout>
 
