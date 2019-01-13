@@ -2,50 +2,57 @@ package com.example.alexandra.hashsetab;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Binder;
 import android.os.IBinder;
+import android.support.annotation.Nullable;
 import android.widget.Toast;
 
+import java.util.HashSet;
+
 public class HashSetService extends Service {
-    // indicates how to behave if the service is killed
-    int mStartMode;
+    private final IBinder iBinder = new LocalBinder();
 
-    // interface for clients that bind
-    IBinder mBinder;
+    public class LocalBinder extends Binder {
 
-    //indicates whether onRebind should be used
-    boolean mAllowRebind;
+        HashSetService getService() {
+            return HashSetService.this;
+        }
+    }
 
-    // Called when the service is being created.
     @Override
     public void onCreate() {
-
+        super.onCreate();
     }
 
-    //The service is starting, due to a call to startService()
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        Toast.makeText(this, "Start service", Toast.LENGTH_SHORT).show();
-        return mStartMode;
-    }
-
-    //A client is binding to the service with bindService()
+    @Nullable
     @Override
     public IBinder onBind(Intent intent) {
-        Toast.makeText(this, "Start service onBind", Toast.LENGTH_SHORT).show();
-        return mBinder;
+        return iBinder;
     }
 
-    //Called when all clients have unbound with unbindService()
-    @Override
-    public boolean onUnbind(Intent intent) {
-        Toast.makeText(this, "Start service onUnbind", Toast.LENGTH_SHORT).show();
-        return mAllowRebind;
+    public HashSet setUnion(HashSet A, HashSet B) {
+        A.addAll(B);
+        return A;
     }
 
-    //Called when The service is no longer used and is being destroyed
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Toast.makeText(this, "Service Destroyed", Toast.LENGTH_LONG).show();
+    public HashSet setIntersection(HashSet<Integer> A, HashSet<Integer> B) {
+        HashSet<Integer> C = new HashSet<Integer>();
+        C.addAll(A);
+        C.retainAll(B);
+        return C;
+    }
+
+    public HashSet setDifference(HashSet<Integer> A, HashSet<Integer> B) {  //A\B
+        HashSet<Integer> C = new HashSet<Integer>();
+        C.addAll(A);
+        C.removeAll(B);
+        return C;
+    }
+
+    public HashSet setSymetricDifference(HashSet<Integer> A, HashSet<Integer> B) {
+        HashSet<Integer> C = new HashSet<Integer>(setDifference(A, B));  // difference between A and B
+        HashSet<Integer> D = new HashSet<Integer>(setDifference(B, A)); // difference between B and A
+        HashSet<Integer> result = new HashSet<Integer>(setUnion(C, D)); // reunion C and D
+        return result;
     }
 }
