@@ -19,5 +19,8 @@
 
         //NoteMedia
         public double NoteMedia { get; set; }
+
+        public virtual Catalog Catalogs { get; set; }
+        public virtual Discipline Disciplines { get; set; }
     }
 }
