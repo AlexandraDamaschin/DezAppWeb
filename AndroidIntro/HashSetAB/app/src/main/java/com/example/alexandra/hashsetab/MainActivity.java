@@ -75,22 +75,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //Union button
         btnUnion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Union
                 HashSet<Integer> A = new HashSet<>(getSet(editA.getText().toString()));
                 HashSet<Integer> B = new HashSet<>(getSet(editB.getText().toString()));
                 HashSet<Integer> C = hashSetService.setUnion(A, B);
 
-                txtResult.setText("Reunion = " + displayResult(C));
+                txtResult.setText("Union = " + displayResult(C));
             }
         });
 
+        //Intersection button
         btnIntersection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Interesection
                 HashSet<Integer> A = new HashSet<>(getSet(editA.getText().toString()));
                 HashSet<Integer> B = new HashSet<>(getSet(editB.getText().toString()));
                 HashSet<Integer> C = hashSetService.setIntersection(A, B);
@@ -99,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Difference button
         btnDifference.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,10 +109,10 @@ public class MainActivity extends AppCompatActivity {
                 HashSet<Integer> C = hashSetService.setDifference(A, B);
 
                 txtResult.setText("Difference = " + displayResult(C));
-                //Difference
             }
         });
 
+        //Symetric difference
         btnSymDiff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
                 HashSet<Integer> C = hashSetService.setSymetricDifference(A, B);
 
                 txtResult.setText("SymDif = " + displayResult(C));
-                //Symetric Difference
             }
         });
 
@@ -142,10 +143,10 @@ public class MainActivity extends AppCompatActivity {
     private HashSet<Integer> getSet(String text) {
         HashSet<Integer> A = new HashSet<Integer>();
         String[] array = text.split(",");
+
         for (String item : array) {
             A.add(Integer.parseInt(item.trim()));
         }
-
         return A;
     }
 
